@@ -24,9 +24,9 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/signature"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/scale"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/signature"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
 )
 
 const (

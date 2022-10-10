@@ -20,11 +20,11 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/signature"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
 	fuzz "github.com/google/gofuzz"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/scale"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/signature"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
 	"github.com/stretchr/testify/assert"
 )
 

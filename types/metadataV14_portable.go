@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/scale"
 )
 
 type PortableTypeV14 struct {

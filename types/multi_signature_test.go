@@ -19,10 +19,10 @@ package types_test
 import (
 	"testing"
 
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types/test_utils"
 	fuzz "github.com/google/gofuzz"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/test_utils"
 )
 
 var testMultiSig1 = MultiSignature{IsEd25519: true, AsEd25519: NewSignature(hash64)}
