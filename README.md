@@ -15,7 +15,7 @@ This package is feature complete, but it is relatively new and might still conta
 
 ## Documentation & Usage Examples
 
-Please refer to https://godoc.org/github.com/puneetjindal1997/go-substrate-rpc-client
+Please refer to https://godoc.org/github.com/puneetjindal1997/go-substrate-rpc-client/v4
 
 ## Contributing
 
