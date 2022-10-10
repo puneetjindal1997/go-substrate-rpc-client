@@ -19,9 +19,9 @@ package types
 import (
 	"fmt"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/signature"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/scale"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/signature"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
 )
 
 // ExtrinsicPayloadV3 is a signing payload for an Extrinsic. For the final encoding, it is variable length based on
@@ -98,6 +98,7 @@ func (e *ExtrinsicPayloadV3) Decode(decoder scale.Decoder) error {
 
 type ExtrinsicPayloadV4 struct {
 	ExtrinsicPayloadV3
+	AssetID            Option[U32]
 	TransactionVersion U32
 }
 
@@ -129,6 +130,11 @@ func (e ExtrinsicPayloadV4) Encode(encoder scale.Encoder) error {
 	}
 
 	err = encoder.Encode(e.Tip)
+	if err != nil {
+		return err
+	}
+
+	err = encoder.Encode(e.AssetID)
 	if err != nil {
 		return err
 	}

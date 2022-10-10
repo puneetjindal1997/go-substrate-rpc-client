@@ -26,11 +26,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/types"
 
-	gsrpc "github.com/centrifuge/go-substrate-rpc-client/v4"
+	gsrpc "github.com/puneetjindal1997/go-substrate-rpc-client/v4"
 )
 
 type ClientOpts struct {

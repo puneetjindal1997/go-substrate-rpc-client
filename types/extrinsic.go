@@ -24,9 +24,9 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/signature"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/scale"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/signature"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
 )
 
 const (
@@ -146,6 +146,7 @@ func (e *Extrinsic) Sign(signer signature.KeyringPair, o SignatureOptions) error
 			GenesisHash: o.GenesisHash,
 			BlockHash:   o.BlockHash,
 		},
+		AssetID:            NewEmptyOption[U32](),
 		TransactionVersion: o.TransactionVersion,
 	}
 
@@ -166,6 +167,7 @@ func (e *Extrinsic) Sign(signer signature.KeyringPair, o SignatureOptions) error
 		Era:       era,
 		Nonce:     o.Nonce,
 		Tip:       o.Tip,
+		AssetID:   NewEmptyOption[U32](),
 	}
 
 	e.Signature = extSig

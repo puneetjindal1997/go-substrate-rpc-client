@@ -20,11 +20,11 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/signature"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
 	fuzz "github.com/google/gofuzz"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/scale"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/signature"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -85,6 +85,7 @@ func TestExtrinsicPayload(t *testing.T) {
 		"0703"+ // Era
 		"d148"+ // Nonce
 		"e2590100"+ // Tip
+		"00"+ // AssetID
 		"7b000000"+ // Spec version
 		"01000000"+ // Tx version
 		"dcd1346701ca8396496e52aa2785b1748deb6db09551b72159dcb3e08991025b"+ // Genesis Hash

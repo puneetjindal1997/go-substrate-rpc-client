@@ -27,16 +27,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
 
-	gsrpc "github.com/centrifuge/go-substrate-rpc-client/v4"
-	mockClient "github.com/centrifuge/go-substrate-rpc-client/v4/client/mocks"
-	mockChain "github.com/centrifuge/go-substrate-rpc-client/v4/rpc/chain/mocks"
-	mockState "github.com/centrifuge/go-substrate-rpc-client/v4/rpc/state/mocks"
+	gsrpc "github.com/puneetjindal1997/go-substrate-rpc-client/v4"
+	mockClient "github.com/puneetjindal1997/go-substrate-rpc-client/v4/client/mocks"
+	mockChain "github.com/puneetjindal1997/go-substrate-rpc-client/v4/rpc/chain/mocks"
+	mockState "github.com/puneetjindal1997/go-substrate-rpc-client/v4/rpc/state/mocks"
 
-	"github.com/centrifuge/go-substrate-rpc-client/v4/rpc"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/rpcmocksrv"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/types"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/rpc"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/rpcmocksrv"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/types"
 	"github.com/stretchr/testify/assert"
 )
 

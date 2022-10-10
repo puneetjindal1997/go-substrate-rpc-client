@@ -23,12 +23,12 @@ import (
 	"testing"
 
 	"github.com/btcsuite/btcutil/base58"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/hash"
-	"github.com/centrifuge/go-substrate-rpc-client/v4/scale"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types/codec"
-	. "github.com/centrifuge/go-substrate-rpc-client/v4/types/test_utils"
 	fuzz "github.com/google/gofuzz"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/hash"
+	"github.com/puneetjindal1997/go-substrate-rpc-client/v4/scale"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/codec"
+	. "github.com/puneetjindal1997/go-substrate-rpc-client/v4/types/test_utils"
 	"github.com/stretchr/testify/assert"
 )
 
